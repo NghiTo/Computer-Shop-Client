@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Computer management</title>
+        <link rel="stylesheet" href="./Computer_management.css">
+    </head>
+    <body>
+        <header>
+            <h1>COMPUTER REPAIR</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <div class="menu">
+                    <p><b>MENU:</b></p>
+                    <p><a href="../Home/index.html">Home</a></p>
+                    <p><a href="../Add_new_computer/Add_new_computer.html">Add a new computer</a></p>
+                    <p><a href="..//Accessory_Details/accessory_details.html">Accessory details</a></p>
+                    <p class="logout-link"><a href="#" id="logoutBtn">Log Out</a></p>
+                </div>
+            </aside>
+            <div class="vr"></div>
+            <main>
+                <form id="computer form">
+                    <p><b>COMPUTER UPDATE FORM:</b></p>
+                    <div class="form_control">
+                        <label for="productCode">Product code</label>
+                        <input type="text" name="productCode" id="productCode" placeholder="29A213" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="repairDate">Repair date</label>
+                        <input type="date" name="repairDate" id="repairDate" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="customerName">Customer name</label>
+                        <input type="text" name="customerName" id="customerName" placeholder="Tô Bá Nghị" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="catalogs">Catalogs</label>
+                        <input type="text" name="catalogs" id="catalogs" placeholder="Vệ sinh định kỳ lần 1" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="brand">Brand</label>
+                        <input type="text" name="brand" id="brand" placeholder="Asus" required>
+                    </div>
+                    <div class="form_submit">
+                        <div>
+                            <input type="submit" value="Save Computer">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+                <div class="data">
+                    <div class="table_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product code</th>
+                                    <th>Repair date</th>
+                                    <th>Customer name</th>
+                                    <th>Catalogs</th>
+                                    <th>Brand</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="computers"></tbody>
+                        </table>
+                    </div>
+                    <div id="loading">
+                        <div class="loading_icon">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <i>BASED ON SPRING FRAMEWORK</i>
+        </footer>
+        <script src="./Computer_management.js"></script>
+    </body>
+</html>

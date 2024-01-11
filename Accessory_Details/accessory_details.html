@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accessory details</title>
+        <link rel="stylesheet" href="./accessory_details.css">
+    </head>
+    <body>
+        <header>
+            <h1>COMPUTER REPAIR</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <div class="menu">
+                    <p><b>MENU:</b></p>
+                    <p><a href="..//Home/index.html">Home</a></p>
+                    <p><a href="../Add_new_computer/Add_new_computer.html">Add a new computer</a></p>
+                    <p><a href="../Computer_Management/Computer_management.html">Computer management</a></p>
+                    <p class="logout-link"><a href="#" id="logoutBtn">Log Out</a></p>
+                </div>
+            </aside>
+            <div class="vr"></div>
+            <main>
+                <form id="Accessory form">
+                    <p><b>ACCESSORY DETAILS:</b></p>
+                    <div class="form_control">
+                        <label for="id">ID</label>
+                        <input type="text" name="id" id="id" placeholder="1" required disabled>
+                    </div>
+                    <div class="form_control">
+                        <label for="productCode">Product code</label>
+                        <input type="text" name="productCode" id="productCode" placeholder="30H666" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="repairDate">Repair date</label>
+                        <input type="date" name="repairDate" id="repairDate" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Lọc gió" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" placeholder="100000" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="statusDamaged">Status damaged</label>
+                        <input type="text" name="statusDamaged" id="statusDamaged" placeholder="Bị bụi bẩn" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="repairStatus">Repair status</label>
+                        <input type="text" name="repairStatus" id="repairStatus" placeholder="Làm sạch" required>
+                    </div>
+                    <div class="form_submit">
+                        <div>
+                            <input type="submit" value="Save Accessory">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+                <div class="data">
+                    <div class="table_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product code</th>
+                                    <th>Repair date</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Status damaged</th>
+                                    <th>Repair Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accessories"></tbody>
+                        </table>
+                    </div>
+                    <div id="loading">
+                        <div class="loading_icon">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <i>BASED ON SPRING FRAMEWORK</i>
+        </footer>
+        <script src="./accessory_detaills.js"></script>
+    </body>
+</html>

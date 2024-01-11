@@ -9,7 +9,7 @@
 <body>
     <div class="register-container">
         <h2>Đăng Ký</h2>
-        <form class="register-form" action="#" method="post">
+        <form id="register-form" class="register-form" action="#" method="post" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="fullname">Họ và Tên:</label>
                 <input type="text" id="fullname" name="fullname" required>
@@ -38,5 +38,6 @@
             <p>Bạn đã có tài khoản? <a href="../Login/Login.html" class="login">Đăng nhập ngay</a></p>
         </div>
     </div>
+    <script src="./Register.js"></script>
 </body>
 </html>

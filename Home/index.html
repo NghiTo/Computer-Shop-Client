@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shop</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1>COMPUTER REPAIR</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="menu-header">
+                <h2>MENU</h2>
+            </div>
+            <div class="menu">
+                <p><a href="../Add_new_computer/Add_new_computer.html">Add a new computer</a></p>
+                <p><a href="../Computer_Management/Computer_management.html">Computer Management</a></p>
+                <p><a href="../Accessory_Details/accessory_details.html">Accessory Details</a></p>
+                <p class="logout-link"><a href="#" id="logoutBtn">Log Out</a></p>
+            </div>
+        </aside>
+        <div class="vr"></div>
+        <main>
+            <h2>Welcome to Computer Shop</h2>
+        </main>
+    </div>
+    <footer>
+        <p><i>Based on Spring Framework</i></p>
+    </footer>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('token');
+            window.location.href = '../Login/login.html';
+        });
+    </script>
+</body>
+
+</html>
